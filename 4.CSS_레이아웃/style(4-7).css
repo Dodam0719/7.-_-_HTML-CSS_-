@@ -1,0 +1,39 @@
+.container {
+  width: 400px;
+  height: 600px;
+  border: 1px solid #000;
+  color: white;
+  font-weight: bold;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+    "top top"
+    "left right"
+    "bottom bottom";
+}
+
+p {
+  margin: 0;
+}
+
+.top {
+  background-color: red;
+  grid-area: top;
+}
+
+.left {
+  background-color: blue;
+  grid-area: left;
+}
+
+.right {
+  background-color: green;
+  grid-area: right;
+}
+
+.bottom {
+  background-color: purple;
+  grid-area: bottom;
+}
