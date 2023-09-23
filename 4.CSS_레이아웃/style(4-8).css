@@ -1,0 +1,13 @@
+@font-face {
+  font-family: Demiela;
+  src: url(./font/demiela/Demiela_FreeVersion.ttf);
+}
+
+.font {
+  font: italic small-caps bold 12px/30px Demiela;
+  /* font-style: italic;
+  font-weight: bolder;
+  font-size: 1em;
+  line-height: 1.2em;
+  font-family: Demiela; */
+}
