@@ -1,0 +1,42 @@
+.container {
+  width: 400px;
+  height: 600px;
+  border: 1px solid #000;
+  color: white;
+  font-weight: bold;
+}
+
+p {
+  margin: 0;
+}
+
+.top {
+  width: 400px;
+  height: 200px;
+  background-color: red;
+}
+
+.left {
+  width: 200px;
+  height: 200px;
+  background-color: blue;
+}
+
+.right {
+  width: 200px;
+  height: 200px;
+  background-color: green;
+}
+
+.bottom {
+  width: 400px;
+  height: 200px;
+  background-color: purple;
+}
+
+.flexBox {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  border: 1px solid #000;
+}
