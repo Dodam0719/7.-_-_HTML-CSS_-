@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /*
+      4. *모든것
+      5. 선택자 + " " + 선택자
+      6. 선택자 + "+" + 선택자
+      7. 선택자 + ">" + 선택자
+      8. 선택자 + "~" + 선택자
+      9. [] : 속성선택자
+      */
+      * {
+        color: black;
+      }
+      div p {
+        color: blue;
+      }
+      .test .panda {
+        color: blue;
+      }
+      .test + .panda {
+        color: green;
+      }
+      .test > .panda {
+        color: yellow;
+      }
+      .test ~ .panda {
+        color: purple;
+      }
+      a[title] {
+        color: red;
+      }
+      a[title="Naver"] {
+        color: orange;
+      }
+    </style>
+  </head>
+  <body>
+    <!--
+    : > 가상클래스
+    :: > 가상요소
+  -->
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
+      exercitationem necessitatibus iste suscipit magni odio deleniti recusandae
+      eaque reiciendis pariatur illum facilis illo minima excepturi eligendi
+      assumenda optio, ea nemo!
+    </p>
+    <h1>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
+      exercitationem necessitatibus iste suscipit magni odio deleniti recusandae
+      eaque reiciendis pariatur illum facilis illo minima excepturi eligendi
+      assumenda optio, ea nemo!
+    </h1>
+    <div class="test">
+      <p class="panda">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta cumque
+        ipsum vitae et, eum maxime. Facilis tenetur velit obcaecati deleniti
+        itaque consequatur, sapiente ratione alias maiores quaerat sunt
+        quibusdam! Aut.
+        <div>
+          <p class="panda">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta cumque
+            ipsum vitae et, eum maxime. Facilis tenetur velit obcaecati deleniti
+            itaque consequatur, sapiente ratione alias maiores quaerat sunt quibusdam!
+            Aut.
+          </p>
+        </div>
+      </p>
+    </div>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
+      exercitationem necessitatibus iste suscipit magni odio deleniti recusandae
+      eaque reiciendis pariatur illum facilis illo minima excepturi eligendi
+      assumenda optio, ea nemo!
+    </p>
+    <p class="panda">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta cumque
+      ipsum vitae et, eum maxime. Facilis tenetur velit obcaecati deleniti
+      itaque consequatur, sapiente ratione alias maiores quaerat sunt quibusdam!
+      Aut.
+    </p>
+
+    <hr>
+    <a href="" title="Naver">네이버</a>
+    <a href="" title="Google">구글</a>
+  </body>
+</html>
