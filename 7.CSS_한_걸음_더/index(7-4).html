@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .coding::first-line {
+        color: red;
+      }
+      .coding::first-letter {
+        font-weight: bold;
+        font-size: 2em;
+      }
+
+      div {
+        position: relative;
+      }
+      .coding::before {
+        content: "";
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+        top: 0;
+        left: 0;
+      }
+
+      .coding::after {
+        content: ";";
+      }
+    </style>
+  </head>
+  <body>
+    <div class="coding">
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita
+        soluta laboriosam id facilis amet dicta necessitatibus, adipisci eum
+        sint sapiente libero quod tenetur minima distinctio iste mollitia,
+        commodi velit corrupti.
+      </p>
+    </div>
+  </body>
+</html>
