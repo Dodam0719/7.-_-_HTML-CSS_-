@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      a:link {
+        color: blue;
+      }
+      a:visited {
+        color: red;
+      }
+      p:not(.panda) {
+        color: green;
+      }
+      .panda p:nth-child(3) {
+        color: yellow;
+      }
+      .panda .coding:nth-of-type(2) {
+        color: purple;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="/panda/test/test" title="Naver">테스트</a>
+
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis optio
+      fugit, voluptas maxime suscipit expedita eveniet soluta consectetur cum
+      earum molestiae velit ducimus error facilis eligendi omnis eos placeat.
+      Deleniti.
+    </p>
+    <p class="panda">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis optio
+      fugit, voluptas maxime suscipit expedita eveniet soluta consectetur cum
+      earum molestiae velit ducimus error facilis eligendi omnis eos placeat.
+      Deleniti.
+    </p>
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis optio
+      fugit, voluptas maxime suscipit expedita eveniet soluta consectetur cum
+      earum molestiae velit ducimus error facilis eligendi omnis eos placeat.
+      Deleniti.
+    </p>
+
+    <div class="panda">
+      <p class="coding">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus eum
+        dolore officia in officiis. Corporis, laudantium? Ad, voluptas maxime et
+        repellat dolore voluptatibus cumque a laborum debitis dignissimos
+        dolorum distinctio.
+      </p>
+      <p class="coding">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus eum
+        dolore officia in officiis. Corporis, laudantium? Ad, voluptas maxime et
+        repellat dolore voluptatibus cumque a laborum debitis dignissimos
+        dolorum distinctio.
+      </p>
+      <p class="coding">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus eum
+        dolore officia in officiis. Corporis, laudantium? Ad, voluptas maxime et
+        repellat dolore voluptatibus cumque a laborum debitis dignissimos
+        dolorum distinctio.
+      </p>
+    </div>
+  </body>
+</html>
