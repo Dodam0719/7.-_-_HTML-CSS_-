@@ -1,0 +1,8 @@
+body .box {
+  width: 100%;
+  background-color: black;
+  color: gray;
+}
+body .box:hover {
+  background-color: white;
+}
