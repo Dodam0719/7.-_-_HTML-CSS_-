@@ -1,0 +1,15 @@
+// 변수 : 변하는 수 (모든 것...)
+// $ : 기호+"작명" : "저장할 내용";
+$primary-color: #333;
+$color: #00498c;
+
+body {
+  .box {
+    width: 100%;
+    background-color: $color;
+    color: white;
+  }
+  #test {
+    color: $primary-color;
+  }
+}
