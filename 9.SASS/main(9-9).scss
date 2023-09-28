@@ -1,0 +1,5 @@
+@use "test.scss";
+
+.box {
+  color: test.$color;
+}
