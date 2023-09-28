@@ -13,12 +13,10 @@ body {
 
 .scroll-outer {
   position: fixed;
-  width: 100px;
+  width: 100vw;
   height: 5px;
   border-radius: $radius;
   top: 10px;
-  left: 50%;
-  transform: translateX(-50%);
   background-color: gray;
 }
 
