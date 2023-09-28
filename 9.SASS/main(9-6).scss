@@ -1,6 +1,7 @@
 /* extend : css 스타일 확장 */
+/* % : 임시 클래스 */
 
-.btn {
+%btn {
   padding: 10px 20px;
   cursor: pointer;
   background-color: inherit;
@@ -8,19 +9,14 @@
   border-radius: 14px;
 }
 
-// .btn-1 {
-//   padding: 10px 20px;
-//   cursor: pointer;
-//   background-color: inherit;
-//   border: 1px solid red;
-//   border-radius: 14px;
-//   color: red;
-//   font-weight: bold;
-// }
-
 .btn-1 {
-  @extend .btn;
+  @extend %btn;
   border: 1px solid red;
   color: red;
-  font-weight: bold;
+}
+
+.btn-2 {
+  @extend %btn;
+  border: 1px solid blue;
+  color: blue;
 }
