@@ -7,16 +7,26 @@
     <link rel="stylesheet" href="style(10-7).css" />
   </head>
   <body>
-    <h1 id="heading">제목입니다.</h1>
+    <h1>제목입니다.</h1>
     <p>내용입니다.</p>
     <button>수정하기</button><br />
-    <button onclick="함수이름()">삭제하기</button>
+    <button>삭제하기</button>
+
+    <div class="modalDiv">
+      <div class="bg"></div>
+      <div class="modal">
+        <p>정말 삭제하시겠습니까?</p>
+        <button>취소</button>
+        <button>삭제</button>
+      </div>
+    </div>
 
     <script>
-      function 함수이름() {
-        var heading = document.getElementById("heading");
-        heading.style.color = "red";
-      }
+      /*
+      1. html/css ui를 만듭니다.
+      2. css로 숨깁니다. (overflow:hidden, display:none, opacity:0 선택사용)
+      3. js로 다시 나타나게 합니다. (애니메이션 효과 선택사항)
+      */
     </script>
   </body>
 </html>
