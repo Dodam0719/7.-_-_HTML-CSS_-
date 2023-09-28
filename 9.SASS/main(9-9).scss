@@ -1,5 +1,5 @@
-@use "test.scss";
+@use "test.scss" as c;
 
 .box {
-  color: test.$color;
+  color: c.$color;
 }
