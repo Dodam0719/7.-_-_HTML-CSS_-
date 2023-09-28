@@ -12,7 +12,7 @@
 }
 
 .btn-1 {
-  @include 버튼();
+  @include 버튼($글자색: red);
 }
 
 .btn-2 {
