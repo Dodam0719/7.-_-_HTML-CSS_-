@@ -1,0 +1,15 @@
+/* 반복문, 가정문(조건문), 변수 : 배열, 오브젝트 */
+
+@for $i from 1 through 10 {
+  .box:nth-of-type(#{$i}) {
+    width: 100px;
+  }
+}
+
+$list: orange, blue, red, yellow;
+
+@each $color in $list {
+  .box {
+    background-color: $color;
+  }
+}
