@@ -13,6 +13,10 @@
         <p>010-6765-xxxx</p> -->
       </div>
     </div>
+    <div
+      id="box2"
+      style="width: 100px; height: 100px; background-color: red"
+    ></div>
 
     <script>
       // 1. js는 태초부터 웹 ui를 제어하기 위한 언어였다.
@@ -22,13 +26,14 @@
         3. css를 변경
         */
       var 박스 = document.getElementById("box");
+      var 두번째박스 = document.getElementById("box2");
 
       박스.addEventListener("mouseover", function () {
-        박스.style.width = "200px";
+        두번째박스.style.width = "200px";
       });
 
       박스.addEventListener("mouseout", function () {
-        박스.style.width = "100px";
+        두번째박스.style.width = "100px";
       });
     </script>
   </body>
