@@ -1,6 +1,6 @@
 /* mixin */
 
-@mixin 버튼($테두리, $글자색) {
+@mixin 버튼($테두리: black, $글자색: black) {
   padding: 10px 20px;
   cursor: pointer;
   background-color: inherit;
@@ -12,7 +12,7 @@
 }
 
 .btn-1 {
-  @include 버튼(red, red);
+  @include 버튼();
 }
 
 .btn-2 {
