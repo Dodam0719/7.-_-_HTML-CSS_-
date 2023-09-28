@@ -12,3 +12,12 @@ $object: (
     background-color: $color;
   }
 }
+
+$statement: yellow;
+p {
+  @if $statement == blue {
+    color: blue;
+  } @else {
+    color: red;
+  }
+}
