@@ -1,0 +1,22 @@
+/* mixin */
+
+@mixin 버튼() {
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: inherit;
+  border: 1px solid lightgray;
+  border-radius: 14px;
+  font-weight: bold;
+}
+
+.btn-1 {
+  @include 버튼();
+  border: 1px solid red;
+  color: red;
+}
+
+.btn-2 {
+  @include 버튼();
+  border: 1px solid blue;
+  color: blue;
+}
