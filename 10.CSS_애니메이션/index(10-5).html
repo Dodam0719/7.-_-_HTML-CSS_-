@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style(10-5).css" />
+  </head>
+  <body>
+    <div id="box">
+      <div class="box-overloay">
+        <p>판다코딩</p>
+        <p>010-6765-xxxx</p>
+      </div>
+
+      <script>
+        // 1. js는 태초부터 웹 ui를 제어하기 위한 언어였다.
+        /*
+        1. js로 제어하고 싶은 html 태그를 선택
+        2. 어떤 이벤트가 발생했을 때 제어할 것인지 선택
+        3. css를 변경
+        */
+        var 박스 = document.getElementById("box");
+
+        박스.addEventListener("click", function () {
+          console.log(박스);
+        });
+      </script>
+    </div>
+  </body>
+</html>
