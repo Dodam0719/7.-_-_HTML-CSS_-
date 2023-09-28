@@ -1,0 +1,19 @@
+.box {
+  width: 100px;
+  height: 100px;
+  border: 1px solid red;
+  transform: translateY(100px);
+  transition: all 1s ease-in-out;
+}
+
+.box:hover {
+  transform: translateY(0px);
+}
+
+/*
+  웹페이지를 그리는 순서
+  1. dom-tree
+  2. layout : width, height
+  3. paint : color
+  4. composite : transform
+*/
